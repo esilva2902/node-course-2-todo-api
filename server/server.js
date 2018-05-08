@@ -54,7 +54,7 @@ app.get('/todos/:id', (req, res) => {
         }
 
         res.send({ todo });
-        
+
     }).catch((e) => {
         res.status(400).send();
     });
@@ -92,6 +92,7 @@ app.post('/getEcho', (req, res) => {
 
 app.listen(port, () => {
     console.log(`Started on port ${port}...`);
+    console.log(`Mongo connection string: ${process.env.MONGODB_URI}`)
 });
 
 module.exports = { app };

@@ -17,3 +17,10 @@ console.log(`uuid v4: ${id}`);
 for(let i = 0; i < 10; i++) {
     console.log(`uuid v4: ${uuidv4()}`);
 }
+
+/***********************************************/
+
+let str = 'erick';
+let otherStr = `${str}.silva`
+console.log(`otherStr value: ${otherStr}`);
+console.log(`otherStr value: ${otherStr.trim()}`);
